@@ -11,13 +11,17 @@ class NewsListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        setup()
     }
     
 }
 
 extension NewsListTableViewController {
-    private func setupUI() {
+    private func setup() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        guard let url = URL(string: AppKey.BASE_URL) else { return }
+        WebService().getArticles(url: url) { _ in
+            
+        }
     }
 }
