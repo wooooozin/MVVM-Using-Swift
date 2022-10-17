@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36193E1D28FD469B004F636C /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36193E1C28FD469B004F636C /* ArticleViewModel.swift */; };
 		36CD179528C63A47008BFD98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CD179428C63A47008BFD98 /* AppDelegate.swift */; };
 		36CD179728C63A47008BFD98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CD179628C63A47008BFD98 /* SceneDelegate.swift */; };
 		36CD179C28C63A47008BFD98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CD179A28C63A47008BFD98 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36193E1C28FD469B004F636C /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		36CD179128C63A47008BFD98 /* NewsAppUsingMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppUsingMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36CD179428C63A47008BFD98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36CD179628C63A47008BFD98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36193E1B28FD464E004F636C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				36193E1C28FD469B004F636C /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		36CD178828C63A47008BFD98 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		36CD179328C63A47008BFD98 /* NewsAppUsingMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				36193E1B28FD464E004F636C /* ViewModel */,
 				36D6408C28DEF2B9007C5FEC /* Model */,
 				36E8F19B28C7365A004C58AB /* Service */,
 				36E7C04E28C63FB900838AF8 /* Controllers */,
@@ -176,6 +187,7 @@
 				36E8F19F28C73811004C58AB /* Appkey.swift in Sources */,
 				36E8F19D28C73666004C58AB /* WebService.swift in Sources */,
 				36CD179728C63A47008BFD98 /* SceneDelegate.swift in Sources */,
+				36193E1D28FD469B004F636C /* ArticleViewModel.swift in Sources */,
 				36D6408E28DEF2C5007C5FEC /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,7 +18,6 @@ class WebService {
                 do {
                     let articlesList = try decoder.decode(ArticleList.self, from: data)
                     completion(articlesList.articles)
-//                    dump(articlesList.articles)
                 } catch {
                     print(error.localizedDescription)
                 }
