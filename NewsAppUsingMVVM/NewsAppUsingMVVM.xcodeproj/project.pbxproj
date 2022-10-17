@@ -13,6 +13,7 @@
 		36CD179C28C63A47008BFD98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CD179A28C63A47008BFD98 /* Main.storyboard */; };
 		36CD179E28C63A4B008BFD98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36CD179D28C63A4B008BFD98 /* Assets.xcassets */; };
 		36CD17A128C63A4B008BFD98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36CD179F28C63A4B008BFD98 /* LaunchScreen.storyboard */; };
+		36D4DC5528FE195A004B7E0C /* ArticleTabeleViewModelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D4DC5428FE195A004B7E0C /* ArticleTabeleViewModelCell.swift */; };
 		36D6408E28DEF2C5007C5FEC /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D6408D28DEF2C5007C5FEC /* Article.swift */; };
 		36E7C05028C63FD500838AF8 /* NewsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E7C04F28C63FD500838AF8 /* NewsListTableViewController.swift */; };
 		36E8F19D28C73666004C58AB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8F19C28C73666004C58AB /* WebService.swift */; };
@@ -28,6 +29,7 @@
 		36CD179D28C63A4B008BFD98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36CD17A028C63A4B008BFD98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36CD17A228C63A4B008BFD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36D4DC5428FE195A004B7E0C /* ArticleTabeleViewModelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTabeleViewModelCell.swift; sourceTree = "<group>"; };
 		36D6408D28DEF2C5007C5FEC /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		36E7C04F28C63FD500838AF8 /* NewsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListTableViewController.swift; sourceTree = "<group>"; };
 		36E8F19C28C73666004C58AB /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		36CD179328C63A47008BFD98 /* NewsAppUsingMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				36D4DC5328FE193B004B7E0C /* Cell */,
 				36193E1B28FD464E004F636C /* ViewModel */,
 				36D6408C28DEF2B9007C5FEC /* Model */,
 				36E8F19B28C7365A004C58AB /* Service */,
@@ -85,6 +88,14 @@
 				36CD17A228C63A4B008BFD98 /* Info.plist */,
 			);
 			path = NewsAppUsingMVVM;
+			sourceTree = "<group>";
+		};
+		36D4DC5328FE193B004B7E0C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				36D4DC5428FE195A004B7E0C /* ArticleTabeleViewModelCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		36D6408C28DEF2B9007C5FEC /* Model */ = {
@@ -182,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36D4DC5528FE195A004B7E0C /* ArticleTabeleViewModelCell.swift in Sources */,
 				36CD179528C63A47008BFD98 /* AppDelegate.swift in Sources */,
 				36E7C05028C63FD500838AF8 /* NewsListTableViewController.swift in Sources */,
 				36E8F19F28C73811004C58AB /* Appkey.swift in Sources */,
