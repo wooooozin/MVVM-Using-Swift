@@ -22,14 +22,11 @@ extension NewsListTableViewController {
     private func setup() {
         self.navigationController?.navigationBar.prefersLargeTitles = true
         guard let url = URL(string: AppKey.BASE_URL) else { return }
-        WebService().getArticles(url: url) { _ in
-            WebService().getArticles(url: url) { article in
-                guard let article = article else { return }
-                self.articleListVM = ArticleListViewModel(article: article)
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
+        WebService().getArticles(url: url) { article in
+            guard let article = article else { return }
+            self.articleListVM = ArticleListViewModel(article: article)
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
         }
     }
