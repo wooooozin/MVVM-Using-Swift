@@ -50,10 +50,61 @@
                     <view key="view" contentMode="scaleToFill" id="zO1-t4-rYf">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="rNv-nW-X9K">
+                                <rect key="frame" x="0.0" y="91" width="390" height="422"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Zlu-A5-wMg">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zlu-A5-wMg" id="mkN-3K-QWY">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gD9-xf-YlA">
+                                <rect key="frame" x="80" y="553" width="230" height="119"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Isg-gk-2zO">
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="32"/>
+                                        <segments>
+                                            <segment title="Small"/>
+                                            <segment title="Medium"/>
+                                            <segment title="Large"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1w-JB-mc8">
+                                        <rect key="frame" x="0.0" y="41" width="230" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QT7-uu-76l">
+                                        <rect key="frame" x="0.0" y="85" width="230" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="poR-ai-Uk3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gD9-xf-YlA" firstAttribute="leading" secondItem="poR-ai-Uk3" secondAttribute="leading" constant="80" id="416-uw-zWN"/>
+                            <constraint firstItem="rNv-nW-X9K" firstAttribute="height" secondItem="zO1-t4-rYf" secondAttribute="height" multiplier="0.5" id="D6n-kG-X3J"/>
+                            <constraint firstItem="poR-ai-Uk3" firstAttribute="trailing" secondItem="rNv-nW-X9K" secondAttribute="trailing" id="ItR-oY-3Bi"/>
+                            <constraint firstItem="rNv-nW-X9K" firstAttribute="leading" secondItem="poR-ai-Uk3" secondAttribute="leading" id="Ixr-5b-qOc"/>
+                            <constraint firstItem="gD9-xf-YlA" firstAttribute="top" secondItem="rNv-nW-X9K" secondAttribute="bottom" constant="40" id="Ysp-A8-uWM"/>
+                            <constraint firstItem="poR-ai-Uk3" firstAttribute="trailing" secondItem="gD9-xf-YlA" secondAttribute="trailing" constant="80" id="jo6-u7-3y9"/>
+                            <constraint firstItem="rNv-nW-X9K" firstAttribute="top" secondItem="poR-ai-Uk3" secondAttribute="top" id="oN3-WX-OCc"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add New Order" id="gbf-9Q-Hi7"/>
+                    <navigationItem key="navigationItem" title="Add New Order" id="gbf-9Q-Hi7">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="8zS-tG-p6N"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="GHF-Uo-1Mo"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jnN-JV-bFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
