@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36F4678D290BBF0D002D0399 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F4678C290BBF0C002D0399 /* WebService.swift */; };
+		36F46790290BC21D002D0399 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F4678F290BC21D002D0399 /* Order.swift */; };
+		36F46793290BC671002D0399 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F46792290BC671002D0399 /* OrderViewModel.swift */; };
 		36FD176D2900407100BFDB8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD176C2900407100BFDB8E /* AppDelegate.swift */; };
 		36FD176F2900407100BFDB8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36FD176E2900407100BFDB8E /* SceneDelegate.swift */; };
 		36FD17742900407100BFDB8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36FD17722900407100BFDB8E /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36F4678C290BBF0C002D0399 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		36F4678F290BC21D002D0399 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		36F46792290BC671002D0399 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		36FD17692900407100BFDB8E /* CoffeeOrderProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeOrderProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36FD176C2900407100BFDB8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36FD176E2900407100BFDB8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36F4678B290BBEE6002D0399 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				36F4678C290BBF0C002D0399 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		36F4678E290BC212002D0399 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36F4678F290BC21D002D0399 /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36F46791290BC652002D0399 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				36F46792290BC671002D0399 /* OrderViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		36FD17602900407100BFDB8E = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +88,9 @@
 		36FD176B2900407100BFDB8E /* CoffeeOrderProject */ = {
 			isa = PBXGroup;
 			children = (
+				36F46791290BC652002D0399 /* ViewModels */,
+				36F4678E290BC212002D0399 /* Models */,
+				36F4678B290BBEE6002D0399 /* Services */,
 				36FD17802900409700BFDB8E /* Controllers */,
 				36FD176C2900407100BFDB8E /* AppDelegate.swift */,
 				36FD176E2900407100BFDB8E /* SceneDelegate.swift */,
@@ -149,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36F46790290BC21D002D0399 /* Order.swift in Sources */,
 				36FD176D2900407100BFDB8E /* AppDelegate.swift in Sources */,
 				36FD1784290042BA00BFDB8E /* AddNewOrderController.swift in Sources */,
 				36FD176F2900407100BFDB8E /* SceneDelegate.swift in Sources */,
+				36F4678D290BBF0D002D0399 /* WebService.swift in Sources */,
+				36F46793290BC671002D0399 /* OrderViewModel.swift in Sources */,
 				36FD17822900428F00BFDB8E /* OrdersTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
